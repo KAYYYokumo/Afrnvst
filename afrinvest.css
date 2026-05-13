@@ -1,0 +1,379 @@
+nav {
+    display: flex;
+    width: 97%;
+    height: 60px;
+    /* background-color: aliceblue ; */
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1000;
+    top: 2;
+    border-radius: 23px;
+    justify-self: center;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+ul li {
+    display: flex;
+
+}
+
+nav ul {
+    display: flex;
+    font-family: Arial;
+    align-items: center;
+    font-weight: bold;
+    gap: 150px;
+
+}
+
+.navbutton {
+    border-radius: 18px;
+    background-color: white transparent;
+    height: 40px;
+    width: 150px;
+    font-size: 15px;
+
+}
+
+* {
+    margin: 0;
+}
+
+.Homepage {
+    position: absolute;
+    z-index: -1;
+}
+
+.Hometext {
+    z-index: 3;
+    position: relative;
+}
+
+.PageI {
+    /* background-image: url(Afrinvest1.jpg); */
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    font-family: Verdana;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+
+}
+
+.pI {
+    font-size: 50px;
+}
+
+.pII {
+    font-size: 18px;
+}
+
+.pIII {
+    border-radius: 18px;
+    background-color: transparent;
+    border-color: white;
+    height: 40px;
+    color: white;
+    width: 150px;
+    font-size: 15px;
+}
+
+.PageII {
+    color: black;
+    background-color: #D6F6EE;
+    height: 400px;
+    text-align: center;
+}
+
+.paI {
+    font-size: 40px;
+}
+
+.PageIII {
+    background-image: url(Afrinvest\ 2);
+    width: 100%;
+    height: 1200px;
+    color: white;
+    font-family: Verdana;
+    background-size: cover;
+    font-size: 22px;
+    overflow: hidden;
+     border-radius: 25px;
+}
+
+/* 2. Container for the horizontal scroll */
+.scroll-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 40px;
+
+
+    /* Smooth native behavior */
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    /* Hide scrollbar for Firefox */
+}
+
+.scroll-wrapper::-webkit-scrollbar {
+    display: none;
+    /* Hide scrollbar for Chrome/Safari */
+}
+
+/* 3. The Long, Small, Transparent Cards */
+.card {
+    /* Adjust width here (smaller) */
+    flex: 0 0 270px;
+    /* Adjust height here (longer) */
+    height: 400px;
+
+
+    /* Glassmorphism / Transparency */
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    /* White Border & Radius */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+
+    /* Snap Logic */
+    scroll-snap-align: center;
+
+    /* Center the text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for desktop */
+.card:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.8);
+    transform: translateY(-10px);
+}
+
+.info-text {
+    position: absolute;
+    top: 50px;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.Pb {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 100px;
+}
+
+.PbI {
+    font-family: Verdana;
+    font-size: 20px;
+    color: white;
+    /* display: flex; */
+}
+
+.PageIV {
+    color: black;
+    background-color: #D6F6EE;
+    height: 800px;
+    align-content: center;
+     border-radius: 25px;
+    /* justify-content: center; */
+}
+
+.pageiv {
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.Pc {
+    font-size: 20px;
+    font-family: Verdana;
+    display: flex;
+    gap: 170px;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
+.PPc {
+    width: 40%;
+}
+
+hr {
+    width: 90%;
+}
+
+.PcI {
+    font-size: 60px;
+    font-family: 'Lucida Sans', ;
+}
+
+.Pcc {
+    width: 40%;
+}
+
+.PccI {
+    display: flex;
+    gap: 80px;
+}
+
+.PccII {
+    display: flex;
+    gap: 80px;
+}
+
+.PdI {
+    display: flex;
+    font-family: sans-serif;
+    font-size: 24px;
+    gap: 200px;
+    justify-content: center;
+    color: #1E1F24;
+}
+
+.PdII {
+    display: flex;
+    font-family: sans-serif;
+    font-size: 15px;
+    gap: 100px;
+    justify-content: center;
+    align-content: center;
+    color: #1E1F24;
+}
+
+.PdIII {
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    align-content: center;
+}
+
+.PageVI {
+    background-color: plum;
+    height: 800px;
+    color: #1E1F24;
+    font-size: 25px;
+    border-radius: 18px;
+    font-family: sans-serif;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    font-weight: bolder;
+}
+
+
+
+
+
+@media (max-width:768px) {
+    .PdIII {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .LOGO-STACK {
+        width: 100%;
+    }
+
+    .Sports-Team {
+        width: 100%;
+    }
+
+    .PdI {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .PdII {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .PAGE-III-CARD {
+        display: none;
+    }
+
+    .PageIII {
+        height: 1500px;
+
+    }
+
+    .PageIV {
+        height: 1500px;
+        width: 100%;
+    }
+
+    .Pc {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .PPc {
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+    }
+
+    .Pcc {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .PccI {
+        align-content: center;
+        gap: 50px;
+        /* justify-content: center; */
+        text-align: center;
+    }
+
+    .PccII {
+        gap: 50px;
+        text-align: center;
+    }
+
+    * {
+        margin: 0;
+    }
+
+    hr {
+        width: 100%;
+    }
+    .PdI{
+        gap: 50px;
+    }
+
+    .PageVI{
+     justify-content: center;
+     align-content: center;
+     text-align: center;
+     font-weight: bolder;
+     height: 1000px;
+    }
+
+
+}
